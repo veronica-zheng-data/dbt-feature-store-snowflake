@@ -1,4 +1,9 @@
 
 target/
-dbt_packages/
+dbt_packages/*
+!dbt_packages/dbt-identity-resolution
 logs/
+profiles.yml
+.user.yml
+working_folder/
+manifest/
