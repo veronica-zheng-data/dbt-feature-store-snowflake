@@ -1,0 +1,46 @@
+
+version: 2
+
+models:
+    - name: feature_store_metadata
+      description: "A starter dbt model"
+      columns:
+          - name: FEATURE_ID
+            description: "The primary key for this table"
+            tests:
+                - not_null
+                - unique
+          - name: FEATURE_NAME
+            description: " "
+            tests:
+                - not_null
+          - name: FEATURE_VERSION
+            description: " "
+            tests:
+                - not_null
+          - name: FEATURE_OWNER
+            description: " "
+            tests:
+                - not_null
+          - name: FEATURE_GROUP
+            description: " "
+            tests:
+                - not_null
+          - name: FEATURE_TYPE
+            description: " "
+            tests:
+                - not_null
+          - name: FEATURE_DESCRIPTION
+            description: " "
+            tests:
+                - not_null
+          - name: FEATURE_TAGS
+            description: " "
+            tests:
+                - not_null
+          - name: CTL_PROCESSED_TIME
+            description: " "
+
+          - name: CTL_VALID_TO
+            description: " "
+                         

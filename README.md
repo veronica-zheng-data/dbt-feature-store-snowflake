@@ -1,15 +1,29 @@
-Welcome to your new dbt project!
+In the Snowflake version, we need to create columns with uppercase in the first time. Otherwise, those columns cannot be used later.
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+```
+.
+├── README.md
+├── analysis
+├── data
+│   ├── customers.csv
+│   ├── orders.csv
+│   ├── payments.csv
+│   └── schema.yml
+├── dbt_project.yml
+├── macros
+│   ├── custom_schema.sql
+│   ├── feature_store_master_func.sql
+│   └── pivot_table_func.sql
+├── models
+│   ├── feature_store
+│   │   ├── group_customers.sql
+│   │   ├── group_orders.sql
+│   │   └── group_payments.sql
+│   └── meta_data
+│       ├── feature_store_master.sql
+│       ├── feature_store_metadata.sql
+│       └── schema.yml
+├── packages.yml
+├── snapshots
+└── tests
+```
